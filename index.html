@@ -1,101 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito non-official | DumbWolf Studio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>non-official | DumbWolf Studio</title>
+
+    <link rel="icon" href="./img/img-favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/var.css">
+    <link rel="stylesheet" href="./css/typer.css">
+</head>
 <body>
+    <nav>
+        <div class="nav-bar">
+            
+            <span class="logo navLogo"><a href="./index.html">DumbWolf Studio</a></span>
 
-    <header>
-        <h2 class="logo">DumbWolf</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
-    </header>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="./index.html">DumbWolf Studio</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
 
-    <div class="wrapper">
-        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
+                <ul class="nav-links">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./pages/contact.html">Contacts</a></li>
+                    <li><a href="./pages/members.html">Members</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                </ul>
+            </div>
+
+           
+            <div class="darkLight-searchBox">
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
                 </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+
+                        <i class='bx bx-search'></i>
+                    </div>
                 </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
+
+                <i class='bx bx-menu sidebarOpen' ></i>
+            </div>
         </div>
+    </nav>
 
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
-                    <label>UserName</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> I agree to the therms & conditions</label>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                </div>
-            </form>
+
+    <div class="body-fix">
+        <div class="container">
+            <h1>We're <span class="typer"></span></h1>
         </div>
     </div>
 
-    <script src="java/login.js"></script>
-
-    <!-- 
-    <div class="container">
-        <strong>
-            <h1>NomeGioco</h1>
-            <hr>
-            <h2>I'm a <span class="type"></span></h2>
-        </strong>
+    <div class="footer" id="about">
+        <section>
+            <article>
+                <h5>Important</h5>
+                <div class="article norm-txt-dk">
+                    <p>At this time the existence of this "group" is not yet guaranteed. &nbsp; :&#40;</p>
+                    <p>So I have nothing to say. Currently. &nbsp; :&#41;</p>
+                </div>
+            </article>
+        </section>
     </div>
 
-    <script src="java/type.js"></script>
+    <footer>
+        <p class="norm-txt">Copyright &copy; 2023 DumbWolf Studio All rights reserved</p>
+        <p>Made with &lt;3 by <a href="https://youtube.com/@Sono.Nessunk" target= "_blank">SonoNessunk</a></p>
+    </footer>
 
+    <script type="text/javascript" src="./js/typer.js"></script>
     <script>
-        var typed = new Typed(".type", {
-        strings: ["Streamer", "Student", "Game Developer", "Communist"],
-        typeSpeed: 80,
-        backSpeed: 100,
-        loop: true
-    });
+        var typed = new Typed(".typer", {
+            strings: ["DumbWolf Studio"],
+            typeSpeed: 95,
+            backSpeed: 12,
+            smartBackspace: true,
+            loop: true
+        })
     </script>
-    --> 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="./js/navbar.js"></script>
 </body>
 </html>
